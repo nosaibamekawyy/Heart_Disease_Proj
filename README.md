@@ -30,7 +30,7 @@ Usage
 
 Clone this repository:
 
-git clone https://github.com/your-username/Heart_Disease_Proj.git
+git clone https://github.com/nosaibamekawyy/Heart_Disease_Proj.git
 cd Heart_Disease_Project
 
 
