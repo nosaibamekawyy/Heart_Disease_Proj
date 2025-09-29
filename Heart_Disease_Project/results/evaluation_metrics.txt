@@ -1,0 +1,48 @@
+Supervised Learning Models:
+
+1. Logistic Regression
+- Accuracy: 0.623
+- Precision (macro avg): 0.33
+- Recall (macro avg): 0.35
+- F1-score (macro avg): 0.33
+- Notes: Performs well on class 0 but struggles on minority classes.
+
+2. Decision Tree
+- Accuracy: 0.574
+- Precision (macro avg): 0.31
+- Recall (macro avg): 0.32
+- F1-score (macro avg): 0.31
+- Notes: Slightly better for minority classes than Logistic Regression but overall lower accuracy.
+
+3. Random Forest
+- Accuracy: 0.590
+- Precision (macro avg): 0.25
+- Recall (macro avg): 0.28
+- F1-score (macro avg): 0.26
+- Notes: Best hyperparameter-tuned model, robust but minority classes still underperform.
+
+4. Support Vector Machine (SVM)
+- Accuracy: 0.574
+- Precision (macro avg): 0.29
+- Recall (macro avg): 0.27
+- F1-score (macro avg): 0.26
+- Notes: Works reasonably on class 0, poorly on others.
+
+Hyperparameter Tuning Results:
+
+1. Logistic Regression
+- Best Params: {'C': 1, 'penalty': 'l1'}
+- Test Accuracy: 0.623
+
+2. Decision Tree
+- Best Params: {'max_depth': 5, 'min_samples_leaf': 2, 'min_samples_split': 5}
+- Test Accuracy: 0.574
+
+3. Random Forest
+- Best Params: {'max_depth': 7, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+- Test Accuracy: 0.590
+
+4. SVM
+- Best Params: {'C': 1, 'gamma': 'scale', 'kernel': 'poly'}
+- Test Accuracy: 0.574
+
